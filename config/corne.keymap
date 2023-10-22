@@ -23,10 +23,10 @@
 
         lower {
             bindings = <
-&mo 4   &kp N1  &kp N2             &kp N3                 &kp N4           &kp N5    &kp N6    &kp N7     &kp N8    &kp N9     &kp N0  &kp MINUS
-&trans  &trans  &kp LBKT           &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &trans    &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT  &trans  &trans
-&mo 3   &trans  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans    &trans    &trans     &trans    &trans     &trans  &trans
-                                   &trans                 &trans           &trans    &kp LGUI  &kp LCTRL  &kp LALT
+&mo 4   &kp N1  &kp N2             &kp N3                 &kp N4           &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp MINUS
+&trans  &trans  &kp LBKT           &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&mo 3   &trans  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans    &trans    &trans    &trans  &trans     &trans  &trans
+                                   &trans                 &trans           &trans    &none     &none     &none
             >;
 
             label = "lower";
@@ -45,7 +45,7 @@
 
         bt_layer {
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
+&none       &none         &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
 &kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
                                         &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
@@ -54,13 +54,22 @@
 
         numpad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp FSLH   &kp N7  &kp N8  &kp N9  &kp MINUS    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp KP_PLUS  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &kp N1  &kp N2  &kp N3  &kp EQUAL    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp FSLH   &kp N7  &kp N8  &kp N9  &kp MINUS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans
                         &trans  &trans  &trans    &trans     &trans  &trans
             >;
 
             label = "numpad";
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
         };
     };
 };
