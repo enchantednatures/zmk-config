@@ -23,19 +23,19 @@
 
         default_layer {
             bindings = <
-&kp RBKT       &kp Q  &kp W  &kp E         &kp R           &kp T          &kp Y            &kp U                   &kp I                    &kp O    &kp P     &kp LBKT
-&kp MINUS      &kp A  &kp S  &kp D         &kp F           &kp G          &kp H            &kp J                   &kp K                    &kp L    &kp SEMI  &kp SQT
-&mt LCTRL TAB  &kp Z  &kp X  &kp C         &kp V           &kp B          &kp N            &kp M                   &kp COMMA                &kp DOT  &kp FSLH  &mt RIGHT_ALT K_BACK
-                             &mt LGUI TAB  &mt LSHIFT RET  &lt 1 SPACE    &lt 2 BACKSPACE  &mt RIGHT_SHIFT ESCAPE  &mt RIGHT_CONTROL SPACE
+&kp LEFT_CONTROL  &kp Q  &kp W  &kp E         &kp R           &kp T          &kp Y            &kp U                   &kp I                    &kp O    &kp P     &kp RIGHT_CONTROL
+&kp LEFT_ALT      &kp A  &kp S  &kp D         &kp F           &kp G          &kp H            &kp J                   &kp K                    &kp L    &kp SEMI  &kp SQT
+&mt LCTRL TAB     &kp Z  &kp X  &kp C         &kp V           &kp B          &kp N            &kp M                   &kp COMMA                &kp DOT  &kp FSLH  &mt RIGHT_ALT K_BACK
+                                &mt LGUI TAB  &mt LSHIFT RET  &lt 1 SPACE    &lt 2 BACKSPACE  &mt RIGHT_SHIFT ESCAPE  &mt RIGHT_CONTROL SPACE
             >;
         };
 
         lower {
             bindings = <
-&none                 &kp N1          &kp N2             &kp N3                 &kp N4           &kp N5              &kp N6    &kp N7        &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp LS(LEFT_BRACKET)  &kp UNDERSCORE  &kp LBKT           &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LESS_THAN       &kp EXCL  &kp QUESTION  &kp EQUAL  &kp PLUS  &kp PIPE  &kp BACKSLASH
-&none                 &kp K_UNDO      &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp GREATER_THAN    &trans    &trans        &trans     &trans    &trans    &trans
-                                                         &trans                 &trans           &trans              &trans    &trans        &trans
+&none                 &kp N1          &kp N2             &kp N3                 &kp N4           &kp N5              &kp N6     &kp N7           &kp N8      &kp N9             &kp N0    &kp MINUS
+&kp LS(LEFT_BRACKET)  &kp UNDERSCORE  &kp LBKT           &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LESS_THAN       &kp UNDER  &kp QUESTION     &kp EQUAL   &kp DOUBLE_QUOTES  &kp PIPE  &kp BACKSLASH
+&none                 &kp MINUS       &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp GREATER_THAN    &kp MINUS  &kp EXCL         &kp PLUS    &kp SQT            &trans    &trans
+                                                         &trans                 &trans           &trans              &trans     &kp RIGHT_SHIFT  &kp DELETE
             >;
 
             label = "lower";
