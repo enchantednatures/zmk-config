@@ -32,9 +32,9 @@
 
         lower {
             bindings = <
-&none                 &kp N1          &kp N2             &kp N3                 &kp N4           &kp N5              &kp N6    &kp N7        &kp N8    &kp N9     &kp N0    &kp MINUS
-&kp LS(LEFT_BRACKET)  &kp UNDERSCORE  &kp LBKT           &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LESS_THAN       &kp EXCL  &kp QUESTION  &kp PLUS  &kp EQUAL  &kp PIPE  &kp BACKSLASH
-&none                 &kp K_UNDO      &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp GREATER_THAN    &trans    &trans        &trans    &trans     &trans    &trans
+&none                 &kp N1          &kp N2             &kp N3                 &kp N4           &kp N5              &kp N6    &kp N7        &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp LS(LEFT_BRACKET)  &kp UNDERSCORE  &kp LBKT           &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LESS_THAN       &kp EXCL  &kp QUESTION  &kp EQUAL  &kp PLUS  &kp PIPE  &kp BACKSLASH
+&none                 &kp K_UNDO      &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp GREATER_THAN    &trans    &trans        &trans     &trans    &trans    &trans
                                                          &trans                 &trans           &trans              &trans    &trans        &trans
             >;
 
