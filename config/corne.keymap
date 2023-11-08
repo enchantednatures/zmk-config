@@ -27,6 +27,17 @@
         };
     };
 
+    behaviors {
+        copy_paste: copy_paste {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COPY_PASTE";
+            #binding-cells = <0>;
+            bindings = <&kp LG(C)>, <&kp LG(V)>;
+
+            tapping-term-ms = <100>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -41,10 +52,10 @@
 
         lower {
             bindings = <
-&kp AMPERSAND  &kp N1             &kp N2                 &kp N3           &kp N4            &kp N5           &kp N6     &kp N7        &kp N8      &kp N9             &kp N0         &kp ASTRK
-&cs_lambda     &kp LBKT           &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LESS_THAN     &kp SEMICOLON    &kp UNDER  &kp QUESTION  &kp EQUAL   &kp DOUBLE_QUOTES  &kp PIPE       &kp AT_SIGN
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                                         &trans           &trans            &trans           &trans     &trans        &kp DELETE
+&kp AMPERSAND  &kp N1    &kp N2                &kp N3          &kp N4         &kp N5           &kp N6     &kp N7        &kp N8      &kp N9             &kp N0    &kp ASTRK
+&cs_lambda     &kp LBKT  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LESS_THAN  &kp SEMICOLON    &kp UNDER  &kp QUESTION  &kp EQUAL   &kp DOUBLE_QUOTES  &kp PIPE  &kp AT_SIGN
+&trans         &trans    &trans                &trans          &trans         &copy_paste      &trans     &trans        &trans      &trans             &trans    &trans
+                                               &trans          &trans         &trans           &trans     &trans        &kp DELETE
             >;
 
             label = "lower";
@@ -52,10 +63,10 @@
 
         raise {
             bindings = <
-&trans                &kp F1            &kp F2            &kp F3                &kp F4          &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11 
-&kp LG(LEFT_BRACKET)  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(N3)            &kp LC(N4)            &kp LC(LA(G))    &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT     &trans        &kp F12
-&trans                &kp LA(LS(N1))    &kp LS(LA(N2))    &kp LS(LA(NUMBER_3))  &kp LS(LA(NUMBER_4))  &trans           &trans         &trans        &trans        &trans        &trans        &trans
-                                                          &trans                &trans                &trans           &trans         &trans        &trans
+&trans                &kp F1            &kp F2            &kp F3                &kp F4                &kp F5           &kp F6    &kp F7    &kp F8  &kp F9     &kp F10  &kp F11
+&kp LG(LEFT_BRACKET)  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(N3)            &kp LC(N4)            &kp LC(LA(G))    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans   &kp F12
+&trans                &kp LA(LS(N1))    &kp LS(LA(N2))    &kp LS(LA(NUMBER_3))  &kp LS(LA(NUMBER_4))  &trans           &trans    &trans    &trans  &trans     &trans   &trans
+                                                          &trans                &trans                &trans           &trans    &trans    &trans
             >;
 
             label = "raise";
@@ -63,10 +74,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp PERCENT    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp COLON        &kp MINUS  &kp EXCL      &kp PLUS    &kp SQT            &kp BACKSLASH  &kp HASH
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans       &trans             &trans                 &trans           &trans            &trans       &trans     &trans    &trans    &trans   &trans         &trans
+&kp PERCENT  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp COLON    &kp MINUS  &kp EXCL  &kp PLUS  &kp SQT  &kp BACKSLASH  &kp HASH
+&trans       &trans             &trans                 &trans           &trans            &trans       &trans     &trans    &trans    &trans   &trans         &trans
+                                                       &trans           &trans            &trans       &trans     &trans    &trans
             >;
         };
 
@@ -79,6 +90,17 @@
             >;
 
             label = "bt";
+        };
+
+        one_hand_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "one_hand_layer";
         };
     };
 };
