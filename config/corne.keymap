@@ -13,7 +13,7 @@
         compatible = "zmk,combos";
 
         adjust {
-            bindings = <&mo 3>;
+            bindings = <&mo 4>;
             key-positions = <39 38>;
         };
     };
@@ -52,13 +52,22 @@
 
         raise {
             bindings = <
-&trans                &kp F1            &kp LS(AT)        &kp LS(POUND)         &kp LS(DLLR)          &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(UNDER)
+&trans                &kp F1            &kp F2            &kp F3                &kp LS(DLLR)          &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(UNDER)
 &kp LG(LEFT_BRACKET)  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(N3)            &kp LC(N4)            &kp LC(LA(G))    &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT     &trans        &trans
 &trans                &kp LA(LS(N1))    &kp LS(LA(N2))    &kp LS(LA(NUMBER_3))  &kp LS(LA(NUMBER_4))  &trans           &trans         &trans        &trans        &trans        &trans        &trans
                                                           &trans                &trans                &trans           &trans         &trans        &trans
             >;
 
             label = "raise";
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
         };
 
         bt {
