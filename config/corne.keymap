@@ -18,6 +18,15 @@
         };
     };
 
+    macros {
+        cs_lambda: cs_lambda {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GREATER_THAN>;
+            label = "CS_LAMBDA";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -32,10 +41,10 @@
 
         lower {
             bindings = <
-&none  &kp N1             &kp N2                 &kp N3           &kp N4            &kp N5           &kp N6     &kp N7           &kp N8      &kp N9             &kp N0         &trans
-&none  &kp LBKT           &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LESS_THAN     &kp SEMICOLON    &kp UNDER  &kp QUESTION     &kp EQUAL   &kp DOUBLE_QUOTES  &kp PIPE       &trans
-&none  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp COLON        &kp MINUS  &kp EXCL         &kp PLUS    &kp SQT            &kp BACKSLASH  &trans
-                                                 &trans           &trans            &trans           &trans     &kp RIGHT_SHIFT  &kp DELETE
+&none       &kp N1             &kp N2                 &kp N3           &kp N4            &kp N5           &kp N6     &kp N7           &kp N8      &kp N9             &kp N0         &trans
+&cs_lambda  &kp LBKT           &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LESS_THAN     &kp SEMICOLON    &kp UNDER  &kp QUESTION     &kp EQUAL   &kp DOUBLE_QUOTES  &kp PIPE       &trans
+&none       &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp COLON        &kp MINUS  &kp EXCL         &kp PLUS    &kp SQT            &kp BACKSLASH  &trans
+                                                      &trans           &trans            &trans           &trans     &kp RIGHT_SHIFT  &kp DELETE
             >;
 
             label = "lower";
@@ -43,7 +52,7 @@
 
         raise {
             bindings = <
-&trans                &kp LS(NUMBER_1)  &kp LS(AT)        &kp LS(POUND)         &kp LS(DLLR)          &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(UNDER)
+&trans                &kp F1            &kp LS(AT)        &kp LS(POUND)         &kp LS(DLLR)          &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(UNDER)
 &kp LG(LEFT_BRACKET)  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(N3)            &kp LC(N4)            &kp LC(LA(G))    &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT     &trans        &trans
 &trans                &kp LA(LS(N1))    &kp LS(LA(N2))    &kp LS(LA(NUMBER_3))  &kp LS(LA(NUMBER_4))  &trans           &trans         &trans        &trans        &trans        &trans        &trans
                                                           &trans                &trans                &trans           &trans         &trans        &trans
