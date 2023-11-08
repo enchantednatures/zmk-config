@@ -64,7 +64,7 @@
         layer_4 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp PERCENT    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp COLON        &kp MINUS  &kp EXCL      &kp PLUS    &kp SQT            &kp BACKSLASH  &kp HASH
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
