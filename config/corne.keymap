@@ -63,6 +63,20 @@
 
             tapping-term-ms = <100>;
         };
+        media_controls: media_controls {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MEDIA_CONTROLS";
+            #binding-cells = <0>;
+            bindings = <&kp K_PLAY_PAUSE>, <&kp K_NEXT>, <&kp K_BACK>;
+        };
+        volume_controls: volume_controls {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VOLUME_CONTROLS";
+            #binding-cells = <0>;
+            bindings = <&kp C_VOL_DN>, <&kp K_MUTE>;
+
+            tapping-term-ms = <100>;
+        };
     };
 
     keymap {
@@ -119,15 +133,15 @@
             label = "bt";
         };
 
-        one_hand_layer {
+        lhs {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp C_VOL_DN  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp K_MUTE    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
-            label = "one_hand_layer";
+            label = "lhs";
         };
 
         num_pad {
