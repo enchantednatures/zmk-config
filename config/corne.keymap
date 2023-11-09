@@ -16,6 +16,16 @@
             bindings = <&mo 4>;
             key-positions = <39 38>;
         };
+
+        toggle_layer {
+            bindings = <&tog 5>;
+            key-positions = <14 15 16>;
+        };
+
+        toggle_rhl {
+            bindings = <&tog 6>;
+            key-positions = <19 20 21>;
+        };
     };
 
     macros {
@@ -101,6 +111,15 @@
             >;
 
             label = "one_hand_layer";
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
         };
     };
 };
