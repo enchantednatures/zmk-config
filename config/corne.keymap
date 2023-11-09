@@ -90,6 +90,17 @@
 
             tapping-term-ms = <200>;
         };
+
+        open_parenthesis: open_parenthesis {
+            compatible = "zmk,behavior-tap-dance";
+            label = "OPEN_PARENTHESIS";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+
+            tapping-term-ms = <200>;
+        };
+
+
     };
 
     keymap {
