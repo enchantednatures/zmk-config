@@ -98,7 +98,20 @@
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
 
             tapping-term-ms = <200>;
+
         };
+
+        open_bracket: open_bracket {
+            compatible = "zmk,behavior-tap-dance";
+            label = "OPEN_BRACKET";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+
+            tapping-term-ms = <200>;
+        };
+
+
+
 
 
     };
