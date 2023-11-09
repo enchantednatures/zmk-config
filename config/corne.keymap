@@ -110,8 +110,14 @@
             tapping-term-ms = <200>;
         };
 
+        open_angle_bracket: open_angle_bracket {
+            compatible = "zmk,behavior-tap-dance";
+            label = "OPEN_ANGLE_BRACKET";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
 
-
+            tapping-term-ms = <200>;
+        }
 
 
     };
