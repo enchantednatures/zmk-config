@@ -26,6 +26,11 @@
             bindings = <&tog 6>;
             key-positions = <19 20 21>;
         };
+
+        shift_symbol {
+            bindings = <&mo 3>;
+            key-positions = <38 40>;
+        };
     };
 
     macros {
