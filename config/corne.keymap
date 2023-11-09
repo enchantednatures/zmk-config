@@ -46,6 +46,12 @@
             bindings = <&kp EQUAL &kp GREATER_THAN>;
             label = "CS_LAMBDA";
         };
+        shift_shift: shift_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp LEFT_SHIFT>;
+            label = "SHIFT_SHIFT";
+        };
     };
 
     behaviors {
