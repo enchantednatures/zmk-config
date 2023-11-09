@@ -117,9 +117,8 @@
             bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
 
             tapping-term-ms = <200>;
-        }
 
-
+        };
     };
 
     keymap {
