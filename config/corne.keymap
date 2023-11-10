@@ -119,6 +119,26 @@
 
             tapping-term-ms = <200>;
         };
+        retro_layer_qt_ht: retro_layer_qt_ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RETRO_LAYER_QT_HT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            retro-tap;
+        };
+        retro_mod_qt_ht: retro_mod_qt_ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RETRO_MOD_QT_HT";
+            bindings = <&mt>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            retro-tap;
+        };
     };
 
     keymap {
@@ -126,10 +146,10 @@
 
         default_layer {
             bindings = <
-&win_copy_paste  &kp Q           &lt 3 W             &lt 2 E         &lt 1 R           &kp T                     &kp Y                         &lt 1 U            &lt 2 I                   &lt 3 O      &kp P               &none
-&esc_tab         &mt LEFT_ALT A  &mt LEFT_CONTROL S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &mt LS(LA(LC(LGUI))) G    &mt LA(LC(LG(LEFT_SHIFT))) H  &mt RIGHT_SHIFT J  &mt RIGHT_GUI K           &mt RCTRL L  &mt RALT SEMICOLON  &none
-&none            &kp Z           &kp X               &kp C           &kp V             &kp B                     &kp N                         &kp M              &kp COMMA                 &kp DOT      &kp FSLH            &none
-                                                     &mt LGUI TAB    &mt LSHIFT RET    &lt 1 SPACE               &lt 3 BACKSPACE               &mo 2              &mt RIGHT_CONTROL DELETE
+&win_copy_paste  &kp Q           &lt 3 W             &lt 2 E         &lt 1 R           &kp T                     &kp Y                           &lt 1 U            &lt 2 I                   &lt 3 O      &kp P               &none
+&esc_tab         &mt LEFT_ALT A  &mt LEFT_CONTROL S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &mt LS(LA(LC(LGUI))) G    &mt LA(LC(LG(LEFT_SHIFT))) H    &mt RIGHT_SHIFT J  &mt RIGHT_GUI K           &mt RCTRL L  &mt RALT SEMICOLON  &none
+&none            &kp Z           &kp X               &kp C           &kp V             &kp B                     &kp N                           &kp M              &kp COMMA                 &kp DOT      &kp FSLH            &none
+                                                     &mt LGUI TAB    &mt LSHIFT RET    &lt 1 SPACE               &retro_layer_qt_ht 3 BACKSPACE  &mo 2              &mt RIGHT_CONTROL DELETE
             >;
         };
 
