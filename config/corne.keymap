@@ -71,7 +71,7 @@
             #binding-cells = <0>;
             bindings = <&kp C_VOL_DN>, <&kp K_MUTE>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <175>;
         };
         win_copy_paste: win_copy_paste {
             compatible = "zmk,behavior-tap-dance";
