@@ -90,7 +90,6 @@
 
             tapping-term-ms = <200>;
         };
-
         open_parenthesis: open_parenthesis {
             compatible = "zmk,behavior-tap-dance";
             label = "OPEN_PARENTHESIS";
@@ -98,9 +97,7 @@
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
 
             tapping-term-ms = <200>;
-
         };
-
         open_bracket: open_bracket {
             compatible = "zmk,behavior-tap-dance";
             label = "OPEN_BRACKET";
@@ -109,7 +106,6 @@
 
             tapping-term-ms = <200>;
         };
-
         open_angle_bracket: open_angle_bracket {
             compatible = "zmk,behavior-tap-dance";
             label = "OPEN_ANGLE_BRACKET";
@@ -117,7 +113,6 @@
             bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
 
             tapping-term-ms = <200>;
-
         };
     };
 
@@ -135,10 +130,10 @@
 
         lower {
             bindings = <
-&kp LG(LS(S))         &kp N1    &kp N2                &kp N3        &kp N4         &kp N5           &kp N6     &kp N7        &kp N8      &kp N9             &kp N0    &kp ASTRK
-&cs_lambda            &kp LBKT  &kp LEFT_PARENTHESIS  &open_brace   &kp LESS_THAN  &kp SEMICOLON    &kp UNDER  &kp QUESTION  &kp EQUAL   &kp DOUBLE_QUOTES  &kp PIPE  &kp AT_SIGN
-&kp LG(LS(NUMBER_4))  &none     &none                 &kp ASTERISK  &kp AMPERSAND  &copy_paste      &none      &shift_shift  &kp GRAVE   &kp TILDE          &none     &none
-                                                      &none         &none          &none            &mo 4      &mo 3         &kp DELETE
+&kp LG(LS(S))         &kp N1       &kp N2             &kp N3        &kp N4               &kp N5           &kp N6     &kp N7        &kp N8      &kp N9             &kp N0    &kp ASTRK
+&cs_lambda            &open_brace  &open_parenthesis  &open_brace   &open_angle_bracket  &kp SEMICOLON    &kp UNDER  &kp QUESTION  &kp EQUAL   &kp DOUBLE_QUOTES  &kp PIPE  &kp AT_SIGN
+&kp LG(LS(NUMBER_4))  &none        &none              &kp ASTERISK  &kp AMPERSAND        &copy_paste      &none      &shift_shift  &kp GRAVE   &kp TILDE          &none     &none
+                                                      &none         &none                &none            &mo 4      &mo 3         &kp DELETE
             >;
 
             label = "lower";
