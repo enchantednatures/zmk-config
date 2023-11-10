@@ -135,10 +135,10 @@
 
         lower {
             bindings = <
-&kp LG(LS(S))         &kp N1       &kp N2             &kp N3       &kp N4               &kp N5           &kp N6     &kp N7        &kp N8      &kp N9             &kp N0    &none
-&cs_lambda            &open_brace  &open_parenthesis  &open_brace  &open_angle_bracket  &kp SEMICOLON    &kp UNDER  &kp QUESTION  &kp EQUAL   &kp DOUBLE_QUOTES  &kp PIPE  &none
-&kp LG(LS(NUMBER_4))  &kp TILDE    &kp ASTRK          &kp DOLLAR   &kp AMPERSAND        &kp AT_SIGN      &none      &shift_shift  &kp GRAVE   &kp TILDE          &none     &none
-                                                      &none        &none                &none            &mo 4      &mo 3         &kp DELETE
+&kp LG(LS(S))         &kp N1       &kp N2             &kp N3       &kp N4               &kp N5           &kp N6       &kp N7        &kp N8      &kp N9             &kp N0        &media_controls
+&cs_lambda            &open_brace  &open_parenthesis  &open_brace  &open_angle_bracket  &kp SEMICOLON    &kp UNDER    &kp QUESTION  &kp EQUAL   &kp DOUBLE_QUOTES  &kp PIPE      &kp C_VOLUME_UP
+&kp LG(LS(NUMBER_4))  &kp HASH     &kp ASTRK          &kp DOLLAR   &kp AMPERSAND        &kp TILDE        &kp AT_SIGN  &kp PERCENT   &kp GRAVE   &kp TILDE          &shift_shift  &volume_controls
+                                                      &none        &none                &none            &mo 4        &mo 3         &kp DELETE
             >;
 
             label = "lower";
@@ -164,23 +164,23 @@
             >;
         };
 
-        bt {
+        dual_layer {
             bindings = <
-&none       &none         &none            &none         &none         &none           &none     &none          &none      &none    &none   &none
-&bt BT_CLR  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END  &trans  &trans
-&none       &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_MUTE    &trans        &trans          &trans    &trans         &trans     &trans   &trans  &trans
-                                           &none         &trans        &none           &none     &none          &none
+&none  &none         &none            &none       &none   &none     &none     &none          &none      &none    &none   &none
+&none  &trans        &trans           &trans      &trans  &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END  &trans  &trans
+&none  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_MUTE  &trans  &trans    &trans    &trans         &trans     &trans   &trans  &trans
+                                      &none       &trans  &none     &none     &none          &none
             >;
 
-            label = "bt";
+            label = "dual";
         };
 
         lhs {
             bindings = <
-&trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp C_VOL_DN  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
-&kp K_MUTE    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans  &trans  &trans    &trans  &trans  &trans
+&kp C_VOLUME_UP  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&kp C_VOL_DN     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
+&kp K_MUTE       &bt BT_CLR    &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                             &trans        &trans        &trans          &trans  &trans  &trans
             >;
 
             label = "lhs";
@@ -188,10 +188,10 @@
 
         num_pad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N7           &kp N8  &kp N9  &kp PLUS   &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N4           &kp N5  &kp N6  &kp MINUS  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N1           &kp N2  &kp N3  &kp FSLH   &trans
-                        &trans  &trans  &trans    &trans  &kp KP_NUMBER_0  &trans
+&kp LA(F4)  &trans  &trans  &trans  &trans  &trans    &trans  &kp N7           &kp N8  &kp N9  &kp PLUS   &kp EQUAL
+&kp LG(Q)   &trans  &trans  &trans  &trans  &trans    &trans  &kp N4           &kp N5  &kp N6  &kp MINUS  &trans
+&trans      &trans  &trans  &trans  &trans  &trans    &trans  &kp N1           &kp N2  &kp N3  &kp FSLH   &trans
+                            &trans  &trans  &trans    &trans  &kp KP_NUMBER_0  &trans
             >;
 
             label = "num_pad";
