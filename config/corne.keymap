@@ -155,10 +155,10 @@
 
         lower {
             bindings = <
-&kp LG(LS(S))         &kp N1       &kp N2             &kp N3       &kp N4               &kp N5           &kp N6       &kp N7        &kp N8      &kp N9             &kp N0        &media_controls
-&cs_lambda            &open_brace  &open_parenthesis  &open_brace  &open_angle_bracket  &kp SEMICOLON    &kp UNDER    &kp QUESTION  &kp EQUAL   &kp DOUBLE_QUOTES  &kp PIPE      &kp C_VOLUME_UP
-&kp LG(LS(NUMBER_4))  &kp HASH     &kp ASTRK          &kp DOLLAR   &kp AMPERSAND        &kp TILDE        &kp AT_SIGN  &kp PERCENT   &kp GRAVE   &kp TILDE          &shift_shift  &volume_controls
-                                                      &none        &none                &none            &mo 4        &mo 3         &kp DELETE
+&kp LG(LS(S))         &kp N1         &kp N2             &kp N3       &kp N4               &kp N5           &kp N6       &kp N7        &kp N8      &kp N9             &kp N0        &media_controls
+&cs_lambda            &open_bracket  &open_parenthesis  &open_brace  &open_angle_bracket  &kp SEMICOLON    &kp UNDER    &kp QUESTION  &kp EQUAL   &kp DOUBLE_QUOTES  &kp PIPE      &kp C_VOLUME_UP
+&kp LG(LS(NUMBER_4))  &kp HASH       &kp ASTRK          &kp DOLLAR   &kp AMPERSAND        &kp TILDE        &kp AT_SIGN  &kp PERCENT   &kp GRAVE   &kp TILDE          &shift_shift  &volume_controls
+                                                        &none        &none                &none            &mo 4        &mo 3         &kp DELETE
             >;
 
             label = "lower";
