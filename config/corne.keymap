@@ -11,8 +11,8 @@
 #define HYP LS(LC(LA(LGUI)))
 
 &mt {
-    tapping-term-ms = <200>;
-    flavor = "balanced";
+    tapping-term-ms = <175>;
+    flavor = "tap-preferred";
 };
 
 / {
