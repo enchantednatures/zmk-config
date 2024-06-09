@@ -58,6 +58,14 @@
 
             label = "ZELLIJ_NEW_TAB";
         };
+
+        zellij_toggle_floating_pane: zellij_toggle_floating_pane {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(G) &kp LC(P) &kp W &kp LC(G)>, <&macro_press>;
+
+            label = "ZELLIJ_TOGGLE_FLOATING_PANE";
+        };
     };
 
     behaviors {
@@ -186,10 +194,10 @@
 
         raise {
             bindings = <
-&trans  &trans             &trans            &trans           &kp LS(LA(LC(LG(R))))  &zellij_new_tab    &trans     &trans    &trans           &trans         &trans     &trans
-&trans  &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp COLON          &kp MINUS  &kp PLUS  &kp EXCLAMATION  &kp BACKSLASH  &kp SQT    &trans
-&trans  &trans             &trans            &trans           &trans                 &trans             &trans     &trans    &trans           &trans         &kp GRAVE  &trans
-                                             &trans           &trans                 &mo 4              &trans     &trans    &trans
+&trans  &trans             &zellij_toggle_floating_pane  &trans           &kp LS(LA(LC(LG(R))))  &zellij_new_tab    &trans     &trans    &trans           &trans         &trans     &trans
+&trans  &kp RIGHT_BRACKET  &kp GREATER_THAN              &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp COLON          &kp MINUS  &kp PLUS  &kp EXCLAMATION  &kp BACKSLASH  &kp SQT    &trans
+&trans  &trans             &trans                        &trans           &trans                 &trans             &trans     &trans    &trans           &trans         &kp GRAVE  &trans
+                                                         &trans           &trans                 &mo 4              &trans     &trans    &trans
             >;
 
             label = "raise";
