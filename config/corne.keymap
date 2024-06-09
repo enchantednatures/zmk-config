@@ -178,7 +178,7 @@
 
         raise {
             bindings = <
-&trans  &trans             &trans            &trans           &trans                 &trans       &trans     &trans    &trans           &trans         &trans     &trans
+&trans  &trans             &trans            &trans           &kp LS(LA(LC(LG(R))))  &trans       &trans     &trans    &trans           &trans         &trans     &trans
 &trans  &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp COLON    &kp MINUS  &kp PLUS  &kp EXCLAMATION  &kp BACKSLASH  &kp SQT    &trans
 &trans  &trans             &trans            &trans           &trans                 &trans       &trans     &trans    &trans           &kp CARET      &kp GRAVE  &trans
                                              &trans           &trans                 &mo 4        &trans     &trans    &trans
