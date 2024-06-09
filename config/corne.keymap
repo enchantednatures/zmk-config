@@ -66,6 +66,22 @@
 
             label = "ZELLIJ_TOGGLE_FLOATING_PANE";
         };
+
+        zellij_next_tab: zellij_next_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(G) &kp LC(T) &kp L &kp LC(G)>, <&macro_press>;
+
+            label = "ZELLIJ_NEXT_TAB";
+        };
+
+        zellij_previous_tab: zellij_previous_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(G) &kp LC(T) &kp H &kp LC(G)>, <&macro_press>;
+
+            label = "ZELLIJ_PREVIOUS_TAB";
+        };
     };
 
     behaviors {
@@ -174,10 +190,10 @@
 
         default_layer {
             bindings = <
-&win_copy_paste  &mt LA(LS(LEFT_GUI))  Q           &mt LC(LS(LEFT_GUI)) W               &mt LS(LA(LC(LEFT_GUI))) E           &mt LC(LS(LEFT_ALT)) R             &kp T                     &kp Y                           &mt LC(LS(RIGHT_ALT)) U  &mt LS(LA(LC(RIGHT_GUI))) I  &mt LC(LS(RIGHT_GUI)) O   &mt LA(LS(RIGHT_GUI)) P  &none
-&esc_tab         &mt LEFT_ALT A  &mt LEFT_CONTROL S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &mt LS(LA(LC(LGUI))) G    &mt RA(RC(RG(RIGHT_SHIFT))) H    &mt RIGHT_SHIFT J        &mt RIGHT_GUI K              &mt LCTRL L               &mt LALT SEMICOLON       &none
-&none            &mt LA(LEFT_GUI) Z           &mt LC(LEFT_GUI)    X               &mt LA(LC(LEFT_GUI))  C           &mt LC(LEFT_ALT)  V             &kp B                     &kp N                           &mt LC(RIGHT_ALT) M      &mt LA(LC(RIGHT_GUI)) COMMA  &mt LC(RIGHT_GUI) PERIOD  &mt LA(RIGHT_GUI) SLASH  &none
-                                                     &mt LGUI TAB    &mt LSHIFT RET    &lt 1 SPACE               &retro_layer_qt_ht 2 BACKSPACE  &mo 3                    &mt RIGHT_CONTROL DELETE
+&win_copy_paste  &mt LA(LS(LEFT_GUI)) Q  &mt LC(LS(LEFT_GUI)) W  &mt LS(LA(LC(LEFT_GUI))) E  &mt LC(LS(LEFT_ALT)) R  &kp T                     &kp Y                           &mt LC(LS(RIGHT_ALT)) U  &mt LS(LA(LC(RIGHT_GUI))) I  &mt LC(LS(RIGHT_GUI)) O   &mt LA(LS(RIGHT_GUI)) P  &none
+&esc_tab         &mt LEFT_ALT A          &mt LEFT_CONTROL S      &mt LEFT_GUI D              &mt LEFT_SHIFT F        &mt LS(LA(LC(LGUI))) G    &mt RA(RC(RG(RIGHT_SHIFT))) H   &mt RIGHT_SHIFT J        &mt RIGHT_GUI K              &mt LCTRL L               &mt LALT SEMICOLON       &none
+&none            &mt LA(LEFT_GUI) Z      &mt LC(LEFT_GUI) X      &mt LA(LC(LEFT_GUI)) C      &mt LC(LEFT_ALT) V      &kp B                     &kp N                           &mt LC(RIGHT_ALT) M      &mt LA(LC(RIGHT_GUI)) COMMA  &mt LC(RIGHT_GUI) PERIOD  &mt LA(RIGHT_GUI) SLASH  &none
+                                                                 &mt LGUI TAB                &mt LSHIFT RET          &lt 1 SPACE               &retro_layer_qt_ht 2 BACKSPACE  &mo 3                    &mt RIGHT_CONTROL DELETE
             >;
         };
 
@@ -194,10 +210,10 @@
 
         raise {
             bindings = <
-&trans  &trans             &zellij_toggle_floating_pane  &trans           &kp LS(LA(LC(LG(R))))  &zellij_new_tab    &trans     &trans    &trans           &trans         &trans     &trans
-&trans  &kp RIGHT_BRACKET  &kp GREATER_THAN              &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp COLON          &kp MINUS  &kp PLUS  &kp EXCLAMATION  &kp BACKSLASH  &kp SQT    &trans
-&trans  &trans             &trans                        &trans           &trans                 &trans             &trans     &trans    &trans           &trans         &kp GRAVE  &trans
-                                                         &trans           &trans                 &mo 4              &trans     &trans    &trans
+&trans  &trans             &zellij_toggle_floating_pane  &trans                &kp LS(LA(LC(LG(R))))  &zellij_new_tab    &trans     &trans    &trans           &trans         &trans     &trans
+&trans  &kp RIGHT_BRACKET  &kp GREATER_THAN              &kp RIGHT_BRACE       &kp RIGHT_PARENTHESIS  &kp COLON          &kp MINUS  &kp PLUS  &kp EXCLAMATION  &kp BACKSLASH  &kp SQT    &trans
+&trans  &trans             &trans                        &zellij_previous_tab  &zellij_next_tab       &trans             &trans     &trans    &trans           &trans         &kp GRAVE  &trans
+                                                         &trans                &trans                 &mo 4              &trans     &trans    &trans
             >;
 
             label = "raise";
