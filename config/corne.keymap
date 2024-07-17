@@ -203,7 +203,7 @@
             bindings = <
 &kp LG(LS(S))         &kp N1            &kp N2         &kp N3          &kp N4                &kp N5           &kp N6     &kp N7         &kp N8        &kp N9     &kp N0             &media_controls
 &cs_lambda            &kp LEFT_BRACKET  &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp SEMICOLON    &kp UNDER  &kp EQUAL      &kp QUESTION  &kp PIPE   &kp DOUBLE_QUOTES  &kp C_VOLUME_UP
-&kp LG(LS(NUMBER_4))  &kp TILDE         &kp AT         &kp HASH        &kp DOLLAR            &kp PERCENT      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp TILDE  &shift_shift       &volume_controls
+&kp LG(LS(NUMBER_4))  &kp TILDE         &kp AT         &kp HASH        &kp DOLLAR            &kp PERCENT      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp GRAVE  &shift_shift       &volume_controls
                                                        &none           &none                 &none            &mo 4      &mo 2          &kp DELETE
             >;
 
@@ -214,7 +214,7 @@
             bindings = <
 &trans  &trans             &zellij_toggle_floating_pane  &trans                &kp LS(LA(LC(LG(R))))  &zellij_new_tab    &trans     &kp LS(LA(LC(LG(F))))  &kp LS(LA(LC(LG(C))))  &trans         &trans     &trans
 &trans  &kp RIGHT_BRACKET  &kp GREATER_THAN              &kp RIGHT_BRACE       &kp RIGHT_PARENTHESIS  &kp COLON          &kp MINUS  &kp PLUS               &kp EXCLAMATION        &kp BACKSLASH  &kp SQT    &trans
-&trans  &trans             &trans                        &zellij_previous_tab  &zellij_next_tab       &trans             &trans     &trans                 &trans                 &trans         &kp GRAVE  &trans
+&trans  &trans             &trans                        &zellij_previous_tab  &zellij_next_tab       &trans             &trans     &kp APOSTROPHE         &kp DOUBLE_QUOTES      &trans         &kp GRAVE  &trans
                                                          &trans                &trans                 &mo 4              &trans     &trans                 &trans
             >;
 
