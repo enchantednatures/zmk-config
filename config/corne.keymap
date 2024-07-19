@@ -23,12 +23,12 @@
         compatible = "zmk,combos";
 
         toggle_layer {
-            bindings = <&tog 5>;
+            bindings = <&tog 6>;
             key-positions = <14 15 16>;
         };
 
         toggle_rhl {
-            bindings = <&tog 6>;
+            bindings = <&tog 7>;
             key-positions = <19 20 21>;
         };
 
@@ -195,7 +195,7 @@
 &win_copy_paste  &mt LA(LS(LEFT_GUI)) Q  &mt LC(LS(LEFT_GUI)) W  &mt LS(LA(LC(LEFT_GUI))) E  &mt LC(LS(LEFT_ALT)) R  &kp T                     &kp Y                           &mt LC(LS(RIGHT_ALT)) U  &mt LS(LA(LC(RIGHT_GUI))) I  &mt LC(LS(RIGHT_GUI)) O   &mt LA(LS(RIGHT_GUI)) P  &kp LCTRL
 &esc_tab         &mt LEFT_ALT A          &mt LEFT_CONTROL S      &mt LEFT_GUI D              &mt LEFT_SHIFT F        &mt LS(LA(LC(LGUI))) G    &mt RA(RC(RG(RIGHT_SHIFT))) H   &mt RIGHT_SHIFT J        &mt RIGHT_GUI K              &mt LCTRL L               &mt LALT SEMICOLON       &kp LEFT_ALT
 &kp LEFT_SHIFT   &mt LA(LEFT_GUI) Z      &mt LC(LEFT_GUI) X      &mt LA(LC(LEFT_GUI)) C      &mt LC(LEFT_ALT) V      &kp B                     &kp N                           &mt LC(RIGHT_ALT) M      &mt LA(LC(RIGHT_GUI)) COMMA  &mt LC(RIGHT_GUI) PERIOD  &mt LA(RIGHT_GUI) SLASH  &kp LGUI
-                                                                 &mt LGUI TAB                &mt LSHIFT RET          &lt 1 SPACE               &retro_layer_qt_ht 2 BACKSPACE  &mo 3                    &mt RIGHT_CONTROL DELETE
+                                                                 &mt LGUI TAB                &mt LSHIFT RET          &lt 1 SPACE               &retro_layer_qt_ht 3 BACKSPACE  &mo 4                    &mt RIGHT_CONTROL DELETE
             >;
         };
 
@@ -204,10 +204,19 @@
 &kp LG(LS(S))         &kp N1            &kp N2         &kp N3          &kp N4                &kp N5           &kp N6     &kp N7         &kp N8        &kp N9     &kp N0             &media_controls
 &cs_lambda            &kp LEFT_BRACKET  &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp SEMICOLON    &kp UNDER  &kp EQUAL      &kp QUESTION  &kp PIPE   &kp DOUBLE_QUOTES  &kp C_VOLUME_UP
 &kp LG(LS(NUMBER_4))  &kp TILDE         &kp AT         &kp HASH        &kp DOLLAR            &kp PERCENT      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp GRAVE  &shift_shift       &volume_controls
-                                                       &none           &none                 &none            &mo 4      &mo 2          &kp DELETE
+                                                       &none           &none                 &none            &mo 5      &mo 3          &kp DELETE
             >;
 
             label = "lower";
+        };
+
+        shortcuts {
+            bindings = <
+&trans  &kp LA(F4)  &trans     &trans    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LALT    &kp LCTRL  &kp LGUI  &kp LSHFT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans     &trans    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                               &trans    &trans     &trans    &trans  &trans  &trans
+            >;
         };
 
         raise {
@@ -215,7 +224,7 @@
 &trans  &trans             &zellij_toggle_floating_pane  &trans                &kp LS(LA(LC(LG(R))))  &zellij_new_tab    &trans     &kp LS(LA(LC(LG(F))))  &kp LS(LA(LC(LG(C))))  &trans         &trans     &trans
 &trans  &kp RIGHT_BRACKET  &kp GREATER_THAN              &kp RIGHT_BRACE       &kp RIGHT_PARENTHESIS  &kp COLON          &kp MINUS  &kp PLUS               &kp EXCLAMATION        &kp BACKSLASH  &kp SQT    &trans
 &trans  &trans             &trans                        &zellij_previous_tab  &zellij_next_tab       &trans             &trans     &kp APOSTROPHE         &kp DOUBLE_QUOTES      &trans         &kp GRAVE  &trans
-                                                         &trans                &trans                 &mo 4              &trans     &trans                 &trans
+                                                         &trans                &trans                 &mo 5              &trans     &trans                 &trans
             >;
 
             label = "raise";
@@ -226,7 +235,7 @@
 &trans                &kp F1            &kp F2            &kp F3                &kp F4                &kp F5                   &kp F6    &kp F7    &kp F8  &kp F9     &kp F10             &kp F11
 &kp LG(LEFT_BRACKET)  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(N3)            &kp LC(N4)            &kp LC(LA(LS(LG(G))))    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans              &kp F12
 &trans                &kp LA(LS(N1))    &kp LS(LA(N2))    &kp LS(LA(NUMBER_3))  &kp LS(LA(NUMBER_4))  &trans                   &trans    &trans    &trans  &trans     &kp LC(LS(ESCAPE))  &kp LC(LA(DELETE))
-                                                          &trans                &trans                &mo 2                    &trans    &trans    &trans
+                                                          &trans                &trans                &mo 3                    &trans    &trans    &trans
             >;
 
             label = "mgmt";
