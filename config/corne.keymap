@@ -56,31 +56,28 @@
         zellij_new_tab: zellij_new_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(G) &kp LC(T) &kp N &kp LC(G)>, <&macro_press>;
-
+            bindings = <&kp LC(G) &kp T &kp N>;
             label = "ZELLIJ_NEW_TAB";
         };
 
         zellij_toggle_floating_pane: zellij_toggle_floating_pane {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(G) &kp LC(P) &kp W &kp LC(G)>, <&macro_press>;
-
+            bindings = <&kp LC(G) &kp P &kp W &kp ESCAPE>;
             label = "ZELLIJ_TOGGLE_FLOATING_PANE";
         };
 
         zellij_next_tab: zellij_next_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(G) &kp LC(T) &kp L &kp LC(G)>, <&macro_press>;
-
+            bindings = <&kp LC(G) &kp T &kp L &kp ESCAPE>;
             label = "ZELLIJ_NEXT_TAB";
         };
 
         zellij_previous_tab: zellij_previous_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(G) &kp LC(T) &kp H &kp LC(G)>, <&macro_press>;
+            bindings = <&kp LC(G) &kp T &kp H &kp ESCAPE>, <&macro_press>;
 
             label = "ZELLIJ_PREVIOUS_TAB";
         };
