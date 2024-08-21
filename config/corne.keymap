@@ -194,7 +194,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DOUBLE_TAP_FOR_LAMBDA";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <250>;
             bindings = <&kp EQUAL>, <&cs_lambda>;
         };
 
@@ -204,7 +204,7 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&rs_return>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <250>;
         };
     };
 
