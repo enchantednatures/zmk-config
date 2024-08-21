@@ -215,7 +215,7 @@
             bindings = <
 &win_copy_paste  &mt LA(LS(LEFT_GUI)) Q  &mt LC(LS(LEFT_GUI)) W  &mt LS(LA(LC(LEFT_GUI))) E  &mt LC(LS(LEFT_ALT)) R    &kp T                     &kp Y                           &mt LC(LS(RIGHT_ALT)) U  &mt LS(LA(LC(RIGHT_GUI))) I  &mt LC(LS(RIGHT_GUI)) O   &mt LA(LS(RIGHT_GUI)) P  &kp LCTRL
 &esc_tab         &mt LEFT_ALT A          &mt LEFT_CONTROL S      &mt LEFT_GUI D              &mt LEFT_SHIFT F          &mt LS(LA(LC(LGUI))) G    &mt RA(RC(RG(RIGHT_SHIFT))) H   &mt RIGHT_SHIFT J        &mt RIGHT_GUI K              &mt LCTRL L               &mt LALT SEMICOLON       &kp LEFT_ALT
-&kp LEFT_SHIFT   &mt LA(LEFT_GUI) Z      &mt LC(LEFT_GUI) X      &mt LA(LC(LEFT_GUI)) C      &mt LC(LEFT_ALT) V        &kp B                     &kp N                           &mt LC(RIGHT_ALT) M      &mt LA(LC(RIGHT_GUI)) COMMA  &mt LC(RIGHT_GUI) PERIOD  &mt LA(RIGHT_GUI) SLASH  &kp LGUI
+&kp LEFT_SHIFT   &mt LA(LEFT_GUI) Z      &mt LC(LEFT_GUI) X      &mt LA(LC(LEFT_GUI)) C      &mt LC(LEFT_ALT) V        &mt LS(LEFT_ALT) B        &mt RS(RIGHT_ALT) N             &mt LC(RIGHT_ALT) M      &mt LA(LC(RIGHT_GUI)) COMMA  &mt LC(RIGHT_GUI) PERIOD  &mt LA(RIGHT_GUI) SLASH  &kp LGUI
                                                                  &mt LGUI TAB                &retro_layer_qt_ht 2 RET  &lt 1 SPACE               &retro_layer_qt_ht 3 BACKSPACE  &mo 4                    &mt RIGHT_CONTROL DELETE
             >;
         };
