@@ -88,6 +88,17 @@
             bindings = <&kp MINUS &kp GREATER_THAN>;
             label = "RS_RETURN";
         };
+
+        click_e: click_e {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_wait_time 100>,
+                <&macro_tap_time 100>,
+                <&kp E &kp E &kp E &kp E &kp E &kp E>;
+
+            label = "CLICK_E";
+        };
     };
 
     behaviors {
@@ -275,7 +286,7 @@
 
         lhs {
             bindings = <
-&kp C_VOLUME_UP  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&kp C_VOLUME_UP  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_SHIFT  &click_e        &trans  &trans  &trans  &trans  &trans  &trans
 &kp C_VOL_DN     &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
 &kp K_MUTE       &bt BT_CLR    &trans            &trans        &trans          &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                                  &trans        &trans          &trans          &trans  &trans  &trans
